@@ -1,0 +1,28 @@
+*********************************************************
+ourvector<9ourvectorIiE> stats:
+ # of vectors created:   3
+ # of elements inserted: 150
+ # of elements accessed: 307
+*********************************************************
+*********************************************************
+ourvector<i> stats:
+ # of vectors created:   673
+ # of elements inserted: 5402
+ # of elements accessed: 4316
+*********************************************************
+*********************************************************
+ourvector<NSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEE> stats:
+ # of vectors created:   3
+ # of elements inserted: 150
+ # of elements accessed: 2920
+*********************************************************
+
+
+I think the reason that my number of vectors created was 673 which is not the most efficient way of coding through this program, however, it is the method that worked for me. 
+I think one of the main reasons there are so many vectors created was because of the three 2D vectors that I use in my district struct. 
+I think another reason that there are so many vectors being created is because as they are passed through into a function they are reinitialized and alot of my code is simply 
+just functions calling other functions of a function being inside of a for loop. If either of these functions had parameters in them they would be reinitializing the vectors as a result 
+causing there to be so many vectors. The number of elements inserts is also very high at 5402 simply due to the fact that there is so much data that is being split up and then pushed into 
+the elements of these vectors which is why there was so many elements inserted into my vectors due to the amount of data that we are parsing through. However, I think the number of elements 
+accessed is less than the number of elements inserted into the vectors because, many times not all of the vectors element’s were always being used for example eligible voters was not used 
+very often and as a result this caused the number of times elements were accessed to be a high number of 4316 however, it was still less than the number of elements being inserted into the vectors. 
